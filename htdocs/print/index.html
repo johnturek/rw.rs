@@ -2,11 +2,59 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 <title>print.rw.rs</title>
+<style>
+body {
+  background: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #000;
+  border: 2px solid #0f0;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  text-align: center;
+}
+h1 {
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  font-size: 2em;
+  margin: 10px 0 20px 0;
+  letter-spacing: 2px;
+}
+p {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
+</style>
 </head>
 <body>
+<div class="container">
 <h1>print.rw.rs</h1>
 <p>Thank you.</p>
-<img src="https://i.imgur.com/dNRTdJn.jpg" width="768" height="5632">
+<img src="https://i.imgur.com/dNRTdJn.jpg" width="768" height="5632" alt="Receipt">
+</div>
 </body>
 </html>

@@ -1,1 +1,150 @@
-<h1>rw.rs</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<style>
+body {
+  background: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #000;
+  border: 2px solid #0f0;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.ascii-art {
+  color: #0f0;
+  font-size: 10px;
+  line-height: 1;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.7);
+  white-space: pre;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #0f0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  font-size: 2.5em;
+  margin: 10px 0;
+  letter-spacing: 3px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5);
+  }
+  to {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.5);
+  }
+}
+
+.tagline {
+  color: #0f0;
+  font-size: 1.1em;
+  margin: 15px 0;
+  padding: 10px;
+  border-left: 3px solid #0f0;
+  background: rgba(0, 255, 0, 0.05);
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  text-decoration: underline;
+}
+
+table {
+  background: rgba(0, 255, 0, 0.03);
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+th {
+  background: rgba(0, 255, 0, 0.1);
+  color: #0f0;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #0f0;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+td {
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+tr:hover {
+  background: rgba(0, 255, 0, 0.1);
+}
+
+img {
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 6px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  .header-container {
+    padding: 10px;
+  }
+  body {
+    padding: 10px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header-container">
+<div class="ascii-art">
+ ██▀███   █     █░ ██▀███    ██████ 
+▓██ ▒ ██▒▓█░ █ ░█░▓██ ▒ ██▒▒██    ▒ 
+▓██ ░▄█ ▒▒█░ █ ░█ ▓██ ░▄█ ▒░ ▓██▄   
+▒██▀▀█▄  ░█░ █ ░█ ▒██▀▀█▄    ▒   ██▒
+░██▓ ▒██▒░░██▒██▓ ░██▓ ▒██▒▒██████▒▒
+░ ▒▓ ░▒▓░░ ▓░▒ ▒  ░ ▒▓ ░▒▓░▒ ▒▓▒ ▒ ░
+  ░▒ ░ ▒░  ▒ ░ ░    ░▒ ░ ▒░░ ░▒  ░ ░
+  ░░   ░   ░   ░    ░░   ░ ░  ░  ░  
+   ░         ░       ░           ░  
+</div>
+<div class="tagline">
+» An experimental software community with a 199X aesthetic<br>
+» Member of the <a href="https://tildeverse.org">tildeverse</a><br>
+» <span class="blink">▮</span> Ready for connection...
+</div>
+</div>

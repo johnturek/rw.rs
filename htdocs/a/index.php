@@ -188,12 +188,97 @@ function arwrs_render_html($content) {
         <html>
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>a.rw.rs</title>
+        <meta charset="UTF-8">
+        <title>a.rw.rs - URL Shortener</title>
+        <style>
+        body {
+          background: #000;
+          color: #0f0;
+          font-family: 'Courier New', Courier, monospace;
+          margin: 0;
+          padding: 20px;
+          line-height: 1.6;
+        }
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background: #000;
+          border: 2px solid #0f0;
+          box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        h1 {
+          color: #0f0;
+          text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+          font-size: 2em;
+          margin: 10px 0 20px 0;
+          letter-spacing: 2px;
+        }
+        p {
+          margin: 15px 0;
+        }
+        input[type="text"] {
+          background: #000;
+          color: #0f0;
+          border: 1px solid #0f0;
+          padding: 8px 12px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 14px;
+          box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+        }
+        input[type="text"]:focus {
+          outline: none;
+          box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+        }
+        input[type="submit"] {
+          background: #000;
+          color: #0f0;
+          border: 2px solid #0f0;
+          padding: 10px 30px;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 14px;
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+          transition: all 0.3s;
+        }
+        input[type="submit"]:hover {
+          background: rgba(0, 255, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+        }
+        a {
+          color: #0ff;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #fff;
+          text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+        b {
+          color: #0ff;
+          text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+        .g-recaptcha {
+          margin: 15px 0;
+        }
+        @media (max-width: 768px) {
+          .container {
+            padding: 10px;
+          }
+          input[type="text"] {
+            width: 100%;
+            max-width: 300px;
+          }
+        }
+        </style>
         </head>
         <body>
+        <div class="container">
         <h1>a.rw.rs</h1>
     EOD;
     $html_footer = <<<'EOD'
+        </div>
         </body>
         </html>
     EOD;
